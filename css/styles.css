@@ -318,7 +318,9 @@ body {
   width: 108.75rem;
   display: grid;
   grid-template-columns: auto auto auto;
+  justify-content: center;
   column-gap: 2.5rem;
+  margin: 5rem auto 0;
 }
 .info__inner .info-list .info__img {
   width: 100%;

@@ -17,7 +17,7 @@ Cu phap chung: .col-{breakpoint}-{number}
 Neu class khong co breakpoint -> man hinh nho nhat
     */
 
-$containerWidth: 1200px;
+$containerWidth: 1175px;
 $gridColumn: 12;
 $columnSpace: 20px;
 
@@ -29,7 +29,7 @@ $columnSpace: 20px;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: $containerWidth;
   margin: 0 auto;
 }
 

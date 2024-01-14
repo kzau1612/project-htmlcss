@@ -1,0 +1,74 @@
+/* xay dung thu vien grid system */
+/* 
+- Chia chieu ngang thanh 12 o bang nhau
+- Dung so de the hien so o: .col-(number). VD: .col-1, .col-2, .col-3... .col-12
+- Dung class .row de the hien flex container
+- Dung class .container de the hien container cua trang web
+
+Responsive: Quy uoc breakpoint (theo mobile first)
+- .col-{number}: < 576px
+- .col-sm-{number} >= 576px
+- .col-md-{number} >= 768px
+- .col-lg-{number} >= 992px
+- .col-xl-{number} >= 1200px
+- .col-xxl-{number} >= 1400px
+
+Cu phap chung: .col-{breakpoint}-{number}
+Neu class khong co breakpoint -> man hinh nho nhat
+    */
+
+$containerWidth: 1200px;
+$gridColumn: 12;
+$columnSpace: 20px;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 calc(-1 * $columnSpace / 2);
+}
+
+[class^="col-"] {
+  //   flex: 0 0 calc(100% / (var(--grid-column) / var(--column-size)));
+  //   max-width: calc(100% / (var(--grid-column) / var(--column-size)));
+  padding: 0 $columnSpace / 2;
+}
+
+@mixin column($breakpoint: "") {
+  @for $i from 1 through $gridColumn {
+    $prefix: "";
+    @if ($breakpoint != "") {
+      $prefix: $breakpoint + "-";
+    }
+    #{".col-" + $prefix + $i } {
+      flex-basis: 100% / ($gridColumn / $i);
+      max-width: 100% / ($gridColumn / $i);
+    }
+  }
+}
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
+
+@include column();
+@each $breakpoint, $width in $breakpoints {
+  @media screen and (min-width: $width) {
+    @include column($breakpoint);
+  }
+}

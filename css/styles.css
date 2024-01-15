@@ -100,6 +100,11 @@ p.desc {
 }
 
 .header {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
   background: var(--white, #fff);
   box-shadow: 0px 1.667px 8.333px 0px rgba(0, 0, 0, 0.15);
 }
@@ -120,6 +125,9 @@ p.desc {
   position: relative;
 }
 .header__inner .nav .nav-list .nav-item.active .nav-link {
+  color: #46b20f;
+}
+.header__inner .nav .nav-list .nav-item:hover .nav-link {
   color: #46b20f;
 }
 .header__inner .nav .nav-list .nav-item.active::before {
@@ -149,7 +157,7 @@ p.desc {
 
 .section {
   width: 100vw;
-  background: var(--Green-100, #f2ffec);
+  background: var(--green-100, #f2ffec);
   padding: 5.75rem 0;
 }
 .section .section-title {

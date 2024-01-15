@@ -99,6 +99,10 @@ p.desc {
   line-height: 1.53; /* 153.125% */
 }
 
+a:hover {
+  color: #46b20f;
+}
+
 .header {
   position: sticky;
   z-index: 1;
@@ -263,6 +267,10 @@ p.desc {
   font-size: 1.6667rem;
   font-weight: 700;
   border: none;
+  cursor: pointer;
+}
+.product__inner .product-list .product-item .product-item__btn:hover {
+  opacity: 0.7;
 }
 
 .about__inner {
@@ -592,6 +600,9 @@ p.desc {
 .footer .footer-row .footer-list .footer-item {
   margin-top: 0.67rem;
 }
+.footer .footer-row .footer-list .footer-item:hover .footer-link {
+  color: #46b20f;
+}
 .footer .footer-row .footer-list .footer-link,
 .footer .footer-row .footer-list .footer-item {
   display: flex;
@@ -618,6 +629,9 @@ p.desc {
   height: 4rem;
   border-radius: 50%;
   background: var(--green-200, #dcffca);
+}
+.footer .footer-bottom__list .footer-bottom__link:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=styles.css.map */

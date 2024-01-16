@@ -101,7 +101,9 @@
     <header class="header">
       <div class="container">
         <div class="header__inner">
-          <img src="./assets/logo/logo.png" alt="logo" class="logo" />
+          <a href="/"
+            ><img src="./assets/logo/logo.png" alt="logo" class="logo"
+          /></a>
 
           <nav class="nav">
             <ul class="nav-list">
@@ -132,8 +134,8 @@
     </header>
 
     <main class="main">
-      <div class="section">
-        <div class="container"><p class="section-title">Sản phẩm</p></div>
+      <div class="hero">
+        <div class="container"><p class="hero__title">Sản phẩm</p></div>
       </div>
 
       <section class="product">
@@ -148,11 +150,13 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">Combo Quán ăn</a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 1000 đôi</p>
-                <p class="product-item__price">Giá: <span>600.000</span> vnd</p>
+                <span class="product-item__price"
+                  >Giá: <span>600.000</span> vnd</span
+                >
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
               <!-- item 2 -->
@@ -162,13 +166,13 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">Combo Quán ăn - nhà hàng</a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 2000 đôi</p>
-                <p class="product-item__price">
+                <span class="product-item__price">
                   Giá: <span>1.200.000</span> vnd
-                </p>
+                </span>
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
               <!-- item 3 -->
@@ -178,16 +182,16 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">
                     Combo Quán ăn <br />
                     Nhà hàng - Khách sạn
                   </a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 3000 đôi</p>
-                <p class="product-item__price">
+                <span class="product-item__price">
                   Giá: <span>1.800.000</span> vnd
-                </p>
+                </span>
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
               <!-- item 4 -->
@@ -197,11 +201,13 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">Combo Gia đình bé xinh</a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 100 đôi</p>
-                <p class="product-item__price">Giá: <span>60.000</span> vnd</p>
+                <span class="product-item__price"
+                  >Giá: <span>60.000</span> vnd</span
+                >
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
               <!-- item 5 -->
@@ -211,11 +217,13 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">Combo Gia đình</a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 2000 đôi</p>
-                <p class="product-item__price">Giá: <span>120.000</span> vnd</p>
+                <span class="product-item__price"
+                  >Giá: <span>120.000</span> vnd</span
+                >
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
               <!-- item 6 -->
@@ -225,11 +233,13 @@
                   alt="donut"
                   class="product__img"
                 />
-                <p class="product-item__title">
+                <h3 class="product-item__title">
                   <a href="#!">Combo Đại gia đình</a>
-                </p>
+                </h3>
                 <p class="product-item__desc">1 Thùng 300 đôi</p>
-                <p class="product-item__price">Giá: <span>180.000</span> vnd</p>
+                <span class="product-item__price"
+                  >Giá: <span>180.000</span> vnd</span
+                >
                 <button class="product-item__btn">Thêm vào giỏ hàng</button>
               </div>
             </div>
@@ -268,44 +278,44 @@
         </div>
       </section>
 
-      <section class="info">
-        <div class="info-bg"></div>
+      <section class="quality">
+        <div class="quality-bg"></div>
 
         <div class="container">
-          <div class="info__inner">
-            <h2 class="info__title">
+          <div class="quality__inner">
+            <h2 class="quality__title">
               GreenChop bảo vệ <br />người dùng như thế nào?
             </h2>
-            <p class="info__desc">
+            <p class="quality__desc">
               Mỗi đôi đũa GreenChop gồm 2 phần thân đũa và đầu đũa. Người dùng
               có thể dễ dàng tách rời hoặc gắn liền 2 phần này với nhau
             </p>
-            <div class="info-list">
+            <div class="quality-list">
               <!-- item 1 -->
-              <div class="info-item">
+              <div class="quality-item">
                 <img
-                  src="./assets/images/info1.jpg"
-                  alt="info"
-                  class="info__img"
+                  src="./assets/images/quality-1.jpg"
+                  alt="quality"
+                  class="quality__img"
                 />
-                <div class="info-item__inner">
-                  <h3 class="info-item__title">01. Thân trên đũa</h3>
-                  <p class="info-item__desc">
+                <div class="quality-item__inner">
+                  <h3 class="quality-item__title">01. Thân trên đũa</h3>
+                  <p class="quality-item__desc">
                     Làm từ nhựa Melamine, đầy đủ điều kiện chứng nhận An toàn
                     thực phẩm.
                   </p>
                 </div>
               </div>
               <!-- item 2 -->
-              <div class="info-item">
+              <div class="quality-item">
                 <img
-                  src="./assets/images/info2.jpg"
-                  alt="info"
-                  class="info__img"
+                  src="./assets/images/quality-2.jpg"
+                  alt="quality"
+                  class="quality__img"
                 />
-                <div class="info-item__inner">
-                  <h3 class="info-item__title">02. Đầu đũa</h3>
-                  <p class="info-item__desc">
+                <div class="quality-item__inner">
+                  <h3 class="quality-item__title">02. Đầu đũa</h3>
+                  <p class="quality-item__desc">
                     Được làm từ gỗ tre và bảo quản trong bọc khử trùng 100%,
                     không hề có sự xâm nhập của vi khuẩn/vì rus gây hại. Người
                     dùng là người đầu tiên chạm tay vào đầu đũa sau khi mở bọc.
@@ -313,15 +323,15 @@
                 </div>
               </div>
               <!-- item 3 -->
-              <div class="info-item">
+              <div class="quality-item">
                 <img
-                  src="./assets/images/info3.jpg"
-                  alt="info"
-                  class="info__img"
+                  src="./assets/images/quality-3.jpg"
+                  alt="quality"
+                  class="quality__img"
                 />
-                <div class="info-item__inner">
-                  <h3 class="info-item__title">03. Khớp Inox 304</h3>
-                  <p class="info-item__desc">
+                <div class="quality-item__inner">
+                  <h3 class="quality-item__title">03. Khớp Inox 304</h3>
+                  <p class="quality-item__desc">
                     Khớp Inox 304 để gắn 2 phần đũa với nhau
                   </p>
                 </div>

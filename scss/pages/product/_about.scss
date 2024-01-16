@@ -1,0 +1,43 @@
+// about
+.about__inner {
+  margin-top: 12.88rem;
+  display: flex;
+  align-items: center;
+  column-gap: 3.52rem;
+
+  .about__content {
+    position: relative;
+    padding-left: 8.58rem;
+    width: 54%;
+
+    .about__title {
+      position: relative;
+      color: var(--content, #2c2c2c);
+      font-size: 3.1667rem;
+      font-weight: 800;
+      line-height: 1.31; /* 4.1649rem */
+    }
+
+    .about__desc {
+      position: relative;
+      width: 36.6667rem;
+      margin-top: 1.52rem;
+      color: var(--content, #2c2c2c);
+      font-size: 1.3333rem;
+      font-weight: 400;
+      line-height: 1.53; /* 153.125% */
+    }
+
+    .about__decor {
+      position: absolute;
+      left: 11px;
+      top: -31px;
+    }
+  }
+
+  .about__media {
+    .about__img {
+      width: 100%;
+    }
+  }
+}

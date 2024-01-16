@@ -1,0 +1,12 @@
+// hero
+.hero {
+  width: 100vw;
+  background: var(--green-100, #f2ffec);
+  padding: 5.75rem 0;
+
+  .hero__title {
+    color: var(--content, #2c2c2c);
+    font-size: 4.3333rem;
+    font-weight: 700;
+  }
+}

@@ -10,12 +10,4 @@
 @import "pages/home/posts";
 
 //product
-@import "./pages/product/common";
-@import "./pages/product/header";
-@import "./pages/product/hero";
-@import "./pages/product/product";
-@import "./pages/product/about";
-@import "./pages/product/quality";
-@import "./pages/product/instruction";
-@import "./pages/product/rule";
-@import "./pages/product/footer";
+@import "./product.scss";

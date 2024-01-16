@@ -83,6 +83,7 @@ h6 {
 
 body {
   font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
 
 h2 {
@@ -271,7 +272,7 @@ a:hover {
   cursor: pointer;
 }
 .product__inner .product-list .product-item .product-item__btn:hover {
-  opacity: 0.7;
+  background: var(--orange-600, #ff6916);
 }
 
 .about__inner {
@@ -632,7 +633,7 @@ a:hover {
   background: var(--green-200, #dcffca);
 }
 .footer .footer-bottom__list .footer-bottom__link:hover {
-  opacity: 0.7;
+  background: var(--orange-600, #ff6916);
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,43 @@
+// rule
+.rule {
+  margin-top: 13.33rem;
+  padding: 13.33rem 0;
+  text-align: center;
+
+  .rule-list {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3.88rem 5.25rem;
+
+    .rule-item {
+      display: flex;
+      column-gap: 1.58rem;
+      text-align: start;
+
+      .rule-item__wrapper {
+        display: inline-block;
+        height: 5.5833rem;
+
+        .rule-item__img {
+          width: 100%;
+        }
+      }
+
+      .rule-item__title {
+        color: var(--content, #2c2c2c);
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.33; /* 133.333% */
+      }
+
+      .rule-item__desc {
+        margin-top: 0.67rem;
+        color: var(--content, #2c2c2c);
+        font-size: 1.5rem;
+        font-weight: 500;
+        width: 21.6667rem;
+        height: 9.75rem;
+      }
+    }
+  }
+}

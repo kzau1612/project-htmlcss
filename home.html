@@ -95,7 +95,7 @@
     <meta name="theme-color" content="#ffffff" />
     <!-- css -->
     <link rel="stylesheet" href="./css/grid.css" />
-    <link rel="stylesheet" href="./css/product.css" />
+    <link rel="stylesheet" href="./css/home.css" />
   </head>
   <body>
     <header class="header">
@@ -107,14 +107,14 @@
 
           <nav class="nav">
             <ul class="nav-list">
-              <li class="nav-item">
-                <a href="./home.html" class="nav-link">Trang chủ</a>
+              <li class="nav-item active">
+                <a href="#home" class="nav-link">Trang chủ</a>
               </li>
               <li class="nav-item">
                 <a href="#about" class="nav-link">Về Greenchop</a>
               </li>
-              <li class="nav-item active">
-                <a href="/" class="nav-link">Sản phẩm</a>
+              <li class="nav-item">
+                <a href="./index.html" class="nav-link">Sản phẩm</a>
               </li>
               <li class="nav-item">
                 <a href="#news" class="nav-link">Tin tức</a>
@@ -126,17 +126,103 @@
           </nav>
 
           <div class="header-action">
-            <img src="./assets/icons/cart.svg" alt="" class="header-icon" />
-            <img src="./assets/icons/search.svg" alt="" class="header-icon" />
+            <span
+              ><img
+                src="./assets/icons/cart.svg"
+                alt="cart"
+                class="header-icon"
+            /></span>
+            <img
+              src="./assets/icons/search.svg"
+              alt="search"
+              class="header-icon"
+            />
           </div>
         </div>
       </div>
     </header>
 
     <main class="main">
-      <div class="hero">
-        <div class="container"><p class="hero__title">Sản phẩm</p></div>
-      </div>
+      <section class="hero">
+        <div class="container">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <span class="hero__sub-title">GreenChop: Tiện gấp dễ gắp</span>
+              <h1 class="hero__title">AN TOÀN HƠN GIỮA MÙA COVID</h1>
+              <p class="hero__desc">
+                GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường hiện
+                tại. Sản phẩm cho phép người dùng tháo lắp và thay mới đầu đũa
+                100% trong mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn ngừa khả năng
+                lây lan dịch bệnh và đảm bảo an toàn cho người dùng.
+              </p>
+            </div>
+            <div class="hero__media">
+              <img
+                src="./assets/images/hero-image.png"
+                alt="hero"
+                class="hero__img"
+              />
+              <span class="hero__brand-name">GREENCHOP</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="statistics">
+        <div class="container">
+          <div class="statistics__inner">
+            <h2 class="statistics__title">
+              GreenChop: Giữ an toàn trong từng bữa ăn của người Việt
+            </h2>
+            <p class="statistics__desc">
+              Với sự tinh tế trong việc thấu hiểu hành vi của khách hàng cùng ý
+              tưởng đột phá, GreenChop đã trở thành sản phẩm không thể thiếu
+              trong mọi bữa ăn mùa dịch tại các nhà hàng, khách sạn, quán ăn...
+            </p>
+            <div class="statistics__list">
+              <div class="statistics-item">
+                <span class="statistics__icon-wrapper">
+                  <img
+                    src="./assets/icons/quality-white.svg"
+                    alt="quality"
+                    class="statistics__icon"
+                  />
+                </span>
+                <span class="statistics__number">1000+</span>
+                <p class="statistics-item__desc">
+                  Hộ gia đình tin dùng GreenChop
+                </p>
+              </div>
+              <div class="statistics-item">
+                <span class="statistics__icon-wrapper">
+                  <img
+                    src="./assets/icons/quality-white.svg"
+                    alt="quality"
+                    class="statistics__icon"
+                  />
+                </span>
+                <span class="statistics__number">600+</span>
+                <p class="statistics-item__desc">
+                  Nhà hàng đã phục vụ GreenChop cho thực khách
+                </p>
+              </div>
+              <div class="statistics-item">
+                <span class="statistics__icon-wrapper">
+                  <img
+                    src="./assets/icons/quality-white.svg"
+                    alt="quality"
+                    class="statistics__icon"
+                  />
+                </span>
+                <span class="statistics__number">20+</span>
+                <p class="statistics-item__desc">
+                  Tỉnh thành được GreenChop phủ sóng
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section class="product">
         <div class="container">
@@ -247,37 +333,6 @@
         </div>
       </section>
 
-      <section class="about">
-        <div class="container">
-          <div class="about__inner">
-            <div class="about__content">
-              <img
-                src="./assets/images/about-02.png"
-                alt="decor"
-                class="about__decor"
-              />
-              <h2 class="about__title">
-                Đũa thay đầu GreenChop - <br />
-                thẻ xanh an toàn trong từng bữa ăn
-              </h2>
-              <p class="about__desc">
-                GreenChop là sản phẩm đũa thay đầu duy nhất trên thị trường hiện
-                tại. Sản phẩm cho phép người dùng tháo lắp và thay mới đầu đũa
-                100% trong mỗi bữa ăn. Nhờ đó, GreenChop giúp ngăn ngừa khả năng
-                lây lan dịch bệnh và đảm bảo an toàn cho người dùng.
-              </p>
-            </div>
-            <figure class="about__media">
-              <img
-                src="./assets/images/about-01.png"
-                alt="about"
-                class="about__img"
-              />
-            </figure>
-          </div>
-        </div>
-      </section>
-
       <section class="quality">
         <div class="quality-bg"></div>
 
@@ -342,120 +397,9 @@
         </div>
       </section>
 
-      <section class="instruction">
-        <div class="container">
-          <div class="instruction__inner">
-            <h2 class="instruction__title">
-              Hướng dẫn thao tác <br />
-              sử dụng đũa GreenChop
-            </h2>
-            <p class="instruction__desc desc">
-              Bằng cách này, người dùng sẽ có một đôi đũa với đầu đũa mới 100%,
-              không qua tay bất kỳ ai trước đó
-            </p>
-
-            <div class="instruction-list">
-              <!-- item 1 -->
-              <div class="instruction-item">
-                <p class="instruction-item__number">01</p>
-                <p class="instruction-item__desc">
-                  Tháo bọc đầu đũa, lấy đầu đũa tre đã khử trùng 100% ghép vào
-                  thân đũa, tạo thành một đôi đũa hoàn chỉnh.
-                </p>
-              </div>
-              <!-- item 2 -->
-              <div class="instruction-item">
-                <p class="instruction-item__number">02</p>
-                <p class="instruction-item__desc">
-                  Dùng bữa với đũa GreenChop đã ghép. Sau khi dùng bữa xong,
-                  tháo đầu đũa đã dùng để bỏ đi.
-                </p>
-              </div>
-              <!-- item 3 -->
-              <div class="instruction-item">
-                <p class="instruction-item__number">03</p>
-                <p class="instruction-item__desc">
-                  Giữ lại thân đũa, vệ sinh sạch sẽ để sử dụng cho những bữa ăn
-                  sau đó.
-                </p>
-              </div>
-              <!-- item 4 -->
-              <div class="instruction-item">
-                <p class="instruction-item__number">04</p>
-                <p class="instruction-item__desc">
-                  Tiếp tục sử dụng một đầu đũa mới để gắn vào thân đũa trong lần
-                  dùng bữa tiếp theo.
-                </p>
-              </div>
-            </div>
-
-            <div class="instruction-more">
-              <div class="instruction-more__content">
-                <p class="instruction-more__desc">
-                  Thao tác thay đầu đũa mỗi bữa ăn giúp người dùng sử dụng một
-                  đôi đũa mới trong mọi bữa ăn và không có sự xâm nhập của
-                  virus/vi khuẩn gây bệnh trước đó. Nhờ vậy, GreenChop đảm bảo
-                  an toàn cho thực khách và đẩy lùi nguy cơ lây lan dịch bệnh
-                  trong ăn uống hàng ngày.
-                </p>
-              </div>
-              <figure class="instruction__img-wrapper">
-                <img
-                  src="./assets/images/more.png"
-                  alt="more"
-                  class="instruction__img"
-                />
-              </figure>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="rule">
         <div class="container">
           <div class="rule__inner">
-            <h2 class="rule__title">
-              Bảo vệ bản thân <br />
-              nguyên tắc 5k cùng Greenchop
-            </h2>
-
-            <div class="rule-row">
-              <figure class="rule-media">
-                <img
-                  src="./assets/images/rule-01.png"
-                  alt="rule"
-                  class="rule__img"
-                />
-              </figure>
-              <p class="rule__desc desc">
-                Kể cả khi đã thực hiện 5K, việc dùng chung dụng cụ ăn uống với
-                người khác vẫn mang những tiềm tàng khả năng bị lây bệnh. Lúc
-                này, đầu đũa được thay thế mỗi bữa ăn giúp ngăn ngừa sự bám víu
-                của Covid 19 cũng như các loại vị khuẩn/virus gây bệnh khác.
-                Không chỉ có thể, GreenChop là sự lựa chọn hoàn hảo cho những
-                thực khách có thói quen sử dụng dụng cụ cá nhân ngay cả tại
-                những nơi công cộng một cách dễ dàng.
-              </p>
-            </div>
-            <div class="rule-row">
-              <figure class="rule-media">
-                <img
-                  src="./assets/images/rule-02.png"
-                  alt="rule"
-                  class="rule__img"
-                />
-              </figure>
-              <p class="rule__desc desc">
-                Đũa GreenChop hoàn thiện cả về công năng lẫn thẩm mỹ. Đầu đũa
-                được làm từ 100% chất liệu tự nhiên, màu sắc hài hòa, kiểu dáng
-                cứng cáp không khác gì đũa ăn truyền thống. Hiện đại, tối giản
-                là những đặc tính nổi bật nhất khi bàn tới thiết kế của sản
-                phẩm. Chính vì thế, GreenChop dần trở thành vật bất ly thân và
-                giúp khẳng định sự đẳng cấp và sự tinh tế của những thực khách
-                văn minh.
-              </p>
-            </div>
-
             <div class="rule-list">
               <!-- item 1 -->
               <div class="rule-item">

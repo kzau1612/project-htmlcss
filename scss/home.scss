@@ -1,0 +1,16 @@
+@import "./partials/variables";
+@import "./partials/reset";
+@import "./partials/mixin";
+@import "./partials/placeholder";
+@import "./partials/base";
+@import "./partials/root"; // import Page
+
+@import "./pages/home/header";
+@import "./pages/home/hero";
+@import "./pages/home/statistics";
+
+@import "./pages/home/product";
+@import "./pages/home/quality";
+@import "./pages/home/rule";
+
+@import "./pages/home/footer";

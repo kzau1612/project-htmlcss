@@ -1,13 +1,11 @@
 @import "./partials/variables";
-@import "./partials/reset.scss";
+@import "./partials/reset";
 @import "./partials/mixin";
 @import "./partials/placeholder";
 @import "./partials/base";
 @import "./partials/root"; // import Page
 // 1.HOme
-@import "pages/home/carousel";
-@import "pages/home/products";
-@import "pages/home/posts";
 
 //product
 @import "./product.scss";
+@import "./home.scss";

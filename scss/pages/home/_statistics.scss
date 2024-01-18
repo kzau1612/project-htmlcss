@@ -1,0 +1,107 @@
+.statistics {
+  margin-top: 10rem;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    margin: 0 auto;
+    max-width: 47%;
+    color: var(--content, #2c2c2c);
+    text-align: center;
+    font-size: 3.1667rem;
+    font-weight: 800;
+    line-height: 1.31; /* 4.1649rem */
+  }
+
+  &__desc {
+    margin: 2.43rem auto 0;
+    max-width: 54%;
+    text-align: center;
+    color: var(--Content, #2c2c2c);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.27; /* 127.604% */
+  }
+
+  &__list {
+    position: relative;
+    padding-top: 9rem;
+    padding-bottom: 11.4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2.17rem;
+
+    &::before,
+    &::after {
+      display: inline-block;
+      position: absolute;
+      content: "";
+      width: 23.5rem;
+      height: 23.5rem;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: var(--green-200, #dcffca);
+    }
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      right: 0;
+      background: var(--orange-200, #ffd5bd);
+    }
+  }
+
+  &-item {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: 3.33rem;
+    width: 25%;
+    border-radius: 0.3333rem;
+    background: var(--white, #fff);
+    box-shadow: -5.833px 8.333px 72.5px 0px rgba(54, 54, 54, 0.12);
+  }
+
+  &-item:nth-child(2) {
+    padding-top: 6.08rem;
+    padding-bottom: 6.08rem;
+
+    .statistics__icon-wrapper {
+      background: var(--green-100, #f2ffec);
+    }
+  }
+
+  &__icon-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 8.3333rem;
+    height: 8.3333rem;
+    border-radius: 1rem;
+    background: var(--orange-100, #fff0e7);
+  }
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  &__number {
+    margin-top: 2.33rem;
+    color: var(--content, #2c2c2c);
+    font-size: 4.3333rem;
+    font-weight: 800;
+  }
+
+  &-item__desc {
+    margin-top: 2.47rem;
+  }
+}

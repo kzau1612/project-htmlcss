@@ -3,6 +3,8 @@
 
   &__inner {
     position: relative;
+    margin: 0 auto;
+    max-width: 100%;
   }
 
   &__title {
@@ -32,7 +34,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 2.17rem;
+    gap: 2.17rem;
 
     &::before,
     &::after {
@@ -73,7 +75,7 @@
   &-item:nth-child(2) {
     padding-top: 6.08rem;
     padding-bottom: 6.08rem;
-
+    width: 29%;
     .statistics__icon-wrapper {
       background: var(--green-100, #f2ffec);
     }
@@ -103,5 +105,23 @@
 
   &-item__desc {
     margin-top: 2.47rem;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .statistics {
+    &__list {
+      flex-direction: column;
+    }
+
+    &-item {
+      align-items: center;
+      width: 100%;
+    }
+
+    &-item:nth-child(2) {
+      width: 100%;
+      padding: 3.33rem;
+    }
   }
 }

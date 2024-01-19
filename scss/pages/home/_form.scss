@@ -77,3 +77,23 @@
     border: none;
   }
 }
+
+@media screen and (max-width: 991.98px) {
+  .form {
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__media {
+      margin: 0 auto;
+    }
+
+    &__action {
+      margin-top: 5rem;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}

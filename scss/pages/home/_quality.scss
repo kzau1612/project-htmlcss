@@ -38,7 +38,7 @@
   .quality-list {
     position: relative;
     margin-top: 5rem;
-    width: 108.75rem;
+    max-width: 108.75rem;
     display: grid;
     grid-template-columns: auto auto auto;
     justify-content: center;
@@ -69,7 +69,7 @@
 
         .quality-item__desc {
           margin-top: 0.63rem;
-          width: 23.1774rem;
+          max-width: 23.1774rem;
           color: var(--content, #19191b);
           font-size: 1.3333rem;
           font-weight: 400;
@@ -78,8 +78,29 @@
       }
 
       &:nth-child(2) .quality-item__desc {
-        width: 30rem;
+        max-width: 30rem;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .quality {
+    .quality-list {
+      grid-template-columns: 1fr;
+    }
+
+    .quality-bg {
+      display: none;
+    }
+
+    .quality-item__title {
+      text-align: center;
+    }
+
+    .quality-item__desc {
+      text-align: center;
+      max-width: 100% !important;
     }
   }
 }

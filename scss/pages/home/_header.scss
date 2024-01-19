@@ -11,6 +11,7 @@
 .header__inner {
   display: flex;
   align-items: center;
+  max-width: 100%;
 
   .nav {
     margin-left: auto;
@@ -86,6 +87,47 @@
 
     .header-icon {
       cursor: pointer;
+    }
+  }
+
+  .bars {
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 1399.98px) {
+  .header {
+    position: static;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 991.98px) {
+  .header {
+    .bars {
+      display: flex;
+    }
+
+    .nav {
+      display: none;
+    }
+
+    &__inner {
+      justify-content: space-between;
+    }
+
+    .header-action {
+      margin-top: 0;
     }
   }
 }

@@ -99,3 +99,16 @@
     }
   }
 }
+
+@media screen and (max-width: 991.98px) {
+  .news {
+    .news__desc {
+      max-width: 100%;
+    }
+
+    .news__list {
+      grid-template-columns: 1fr;
+      row-gap: 20px;
+    }
+  }
+}

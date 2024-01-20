@@ -88,8 +88,8 @@ textarea {
 }
 
 .header {
-  position: fixed;
-  z-index: 1;
+  position: absolute;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0;
@@ -739,6 +739,9 @@ textarea {
   .quality .quality-item__desc {
     text-align: center;
     max-width: 100% !important;
+  }
+  .quality .quality__img {
+    height: auto !important;
   }
 }
 .rule {
